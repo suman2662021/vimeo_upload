@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import tus from 'tus-js-client';
 import axios from 'axios';
 
+//from vimeo you get accesstoken
 const accessToken = process.env.REACT_APP_VIMEO_ACCESS_TOKEN;
 
 const headerDelete = {
@@ -28,6 +29,7 @@ function App() {
   const [videoLink, setVideoLink] = useState('');
 
   const handleChange = async eventObject => {
+    
     // Get the selected file from the input element
     const file = eventObject.target.files[0];
     const fileName = file.name;
