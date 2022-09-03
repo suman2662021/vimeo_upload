@@ -69,7 +69,7 @@ function App() {
       },
       onSuccess: function () {
         console.log('Download %s from %s', upload.file.name, upload.url);
-        setVideoUrl(upload.url); 
+        setVideoUrl(upload.url); //from here we set our video url
         setVideoLink(upload.data.link); //this a actual link to the video
       }
     });
